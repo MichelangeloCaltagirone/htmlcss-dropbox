@@ -5,5 +5,47 @@
     box-sizing: border-box;
 }
 
-/* Geberics */
+/* Generics */
 
+.bg-container {
+    width: 1200px;
+    margin: 0 auto;
+    border-left: 1px dashed red; /* da togliere */
+    border-right: 1px dashed red; /* da togliere */
+}
+
+.sm-container {
+    width: 1000px;
+    margin: 0 auto;
+    border-left: 1px dashed lightseagreen; /* da togliere */
+    border-right: 1px dashed lightseagreen; /* da togliere */
+}
+
+.upper-header {
+    height: 80px; /* da togliere */
+    border-bottom: 1px solid black; /* da togliere */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: aqua; /* da togliere */
+}
+
+.lower-header {
+    height: 400px; /* da togliere */
+    
+}
+
+/* style for the blocchettoni */
+
+
+section {
+    height: 400px;
+    background-color: yellow;
+}
+
+footer {
+    background-color: blue;
+    height: 500px;
+}
