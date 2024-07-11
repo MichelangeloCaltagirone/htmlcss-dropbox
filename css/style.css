@@ -22,6 +22,11 @@ h1 {
     text-align: left;
 }
 
+h2 {
+    font-size: 28px;
+    margin: 30px 0;
+}
+
 p {
     font-size: 16px;
 }
@@ -29,20 +34,20 @@ p {
 button {
     padding: 5px 10px;
     color: white;
-    background-color: lightskyblue;
+    background-color: rgb(6, 85, 181);
     border: none;
     font-size: 16px;
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(133, 216, 244);
 }
 
 
 #logo {
     width: 7rem;
     display: inline-block;
-    
+    margin-right: 10px;
 }
 
 
@@ -78,12 +83,12 @@ header {
 
 .lower-header {
     /* height: 400px;  */
-    margin-top: 80px; 
+    margin-top: 80px;
     /* background-color: aqua; */
     padding: 30px 0;
     height: 60vh;
     position: relative;
-      
+
 }
 
 
@@ -103,18 +108,18 @@ nav button {
 }
 
 
-.left-upper-nav span, img {
-    margin-right: 10px;    
+.left-upper-nav > span {
+    margin-right: 10px;
 }
 .right-upper-nav span {
-    margin-left: 10px;    
+    margin-left: 10px;
 }
 
  /* Style Lower header  */
 
 .lower-header img {
     float: right;
-    
+
 }
 
 .lower-header a {
@@ -123,6 +128,7 @@ nav button {
     left: 0;
     font-size: 2.5rem;
     padding-bottom: 5px;
+    color: black;
 }
 
 
@@ -130,6 +136,57 @@ nav button {
     margin: 20px 0;
     padding: 10px;
 }
+
+
+/* Style of the Main */
+
+/* Subscriptions Section */
+
+/* Utility for this section till next comment */
+
+.subscriptions {
+    margin-top: 100px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.circle.colored {
+    border-color: rgb(4, 4, 192);
+    border-width: 4px;
+}
+
+
+.subscriptions  > :nth-child(4) {
+    margin-left: 20px;
+}
+
+/* End of Utility */
+
+/* Styling the flex container of this section */
+
+.row {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(100% / 3 - 20px / 3);
+}
+.final.col {
+    flex-grow: 1;
+}
+
+
+
+
+
 
 
 /* style for the blocchettoni */
