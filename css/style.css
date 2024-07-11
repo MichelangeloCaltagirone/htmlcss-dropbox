@@ -86,7 +86,8 @@ header {
 
 .sm-container {
     width: 800px;
-    margin: 0 auto;
+    /* margin: 100px auto; */
+    margin: 100px auto 0 auto;
     border-left: 2px dashed lightseagreen; /* da togliere */
     border-right: 2px dashed lightseagreen; /* da togliere */
 }
@@ -163,10 +164,6 @@ nav button {
 /* Subscriptions Section */
 
 /* Utility for this section till next comment */
-
-.subscriptions {
-    margin-top: 100px;
-}
 
 .circle {
     width: 15px;
@@ -303,6 +300,20 @@ li > i::before {
     padding: 10px 20px;
 }
 
+/* Style for Flex Features' Section */
+
+
+.features .flex {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features .card {
+    flex-basis: calc(100% / 3 - 60px / 3); 
+    background-color: crimson;
+    flex-grow: 1;
+    height: 350px;  
+}
 
 
 
