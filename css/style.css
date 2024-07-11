@@ -12,17 +12,31 @@ body {
 }
 
 img {
-    width: 500px;
+    width: 660px;
 }
 
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+}
 
 button {
     padding: 5px 10px;
     color: white;
     background-color: lightskyblue;
     border: none;
+    font-size: 16px;
 }
 
+header {
+    background-color: aqua;
+}
 
 
 #logo {
@@ -39,14 +53,14 @@ button {
 }
 
 .bg-container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
     border-left: 2px dashed red; /* da togliere */
     border-right: 2px dashed red; /* da togliere */
 }
 
 .sm-container {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
     border-left: 2px dashed lightseagreen; /* da togliere */
     border-right: 2px dashed lightseagreen; /* da togliere */
@@ -58,14 +72,21 @@ button {
     top: 0;
     left: 0;
     right: 0;
-    background-color: white; /* da togliere */
+    z-index: 1;
+    background-color: white;
 }
 
 .lower-header {
-    height: 400px; /* da togliere */
-    margin-top: 80px;
-    
+    /* height: 400px;  */
+    margin-top: 80px; 
+    /* background-color: aqua; */
+    padding: 30px 0;
+    height: 60vh;
+    position: relative;
+      
 }
+
+
 
 /* Style the Upper-header Nav */
 
@@ -77,6 +98,11 @@ nav {
     margin: 0 10px;
 }
 
+nav button {
+    margin-left: 10px;
+}
+
+
 .left-upper-nav span, img {
     margin-right: 10px;    
 }
@@ -84,8 +110,25 @@ nav {
     margin-left: 10px;    
 }
 
-nav button {
-    margin-left: 10px;
+ /* Style Lower header  */
+
+.lower-header img {
+    float: right;
+    
+}
+
+.lower-header a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+}
+
+
+.lower-header button {
+    margin: 20px 0;
+    padding: 10px;
 }
 
 
