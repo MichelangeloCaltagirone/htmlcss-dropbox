@@ -322,6 +322,16 @@ li > i::before {
     margin-bottom: 15px;
 }
 
+.share-adoption {
+    padding-top: 30px;
+}
+
+/* This section shows the style for the shares of DropBox */
+.share-adoption > a {
+    color: rgb(27, 79, 251);
+    font-size: small;
+}
+
 
 
 
