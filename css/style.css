@@ -338,43 +338,60 @@ li > i::before {
 
 .Corp-client.flex > * {
     flex-basis: calc(100% / 3);
-    height: 500px;
 }
 
-.Corp-client > .flex.left, .flex.right {
+.Corp-client > .side.flex {
     flex-wrap: wrap;
 }
 
-.flex.left > * {
-    flex-basis: calc(100% / 2);
+.side.flex > * { 
     width: 50%;
-    padding: 15px 30px;
+    height: 50%;
+    padding: 30px;
 }
 
-.flex.right > * {
-    flex-basis: 50%;
-    width: 50%;
-    padding: 15px 30px;
+/* style of the big box in the center */
+.Corp-client {
+    margin-top: 100px;
 }
-
 .Corp-client.flex .center {
-    padding: 25px 10px;
+    padding: 40px
 }
+
 .center img {
     width: 50%;
-    margin-bottom: 30px;
 }
- .center span {
-    margin-top: 30px;
+
+.center p {
+    margin-bottom: 30px;
  }
 
-
-
-
-
-
-
-
+ /* Background colors of the sons of Flex. left/right */
+ #designit {
+    background-color: lightgreen;
+ }
+ #arizona {
+    background-color: maroon
+ }
+ #florida {
+    background-color: skyblue;
+    align-items:stretch 0;
+ }
+ #topps {
+    background-color: red;
+ }
+ #world {
+    background-color: darkred;
+ }
+ #hearst {
+    background-color: azure;
+ }
+ #lonely {
+    background-color: blue;
+ }
+ #channel {
+    background-color: gold;
+ }
 /* style for the blocchettoni */
 
 
