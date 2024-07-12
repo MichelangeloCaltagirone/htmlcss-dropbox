@@ -392,25 +392,30 @@ li > i::before {
  #channel {
     background-color: gold;
  }
+
+ /* Free-try Link Section */
+
+ .free-try-link {
+    background-color: rgb(133, 216, 244);
+ }
+ .free-try-link .flex {
+    justify-content: space-between;
+    align-items: center;
+ }
+ .free-try-link .flex > h2 {
+    flex-basis: 40%;
+ }
+ .free-try-link .flex > a { /* da generallizzare la stilizzazzione per tutte le a link*/
+    flex-basis: 30%;
+    text-align: right;
+ }
+
 /* style for the blocchettoni */
-
-
-
-
-
 section {
     height: 1000px;
     background-color: yellow;
     border-bottom: 2px solid black;
 }
-
-
-
-
-
-
-
-
 footer {
     background-color: blue;
     height: 500px;
