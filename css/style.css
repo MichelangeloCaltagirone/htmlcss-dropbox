@@ -310,9 +310,16 @@ li > i::before {
 
 .features .card {
     flex-basis: calc(100% / 3 - 60px / 3); 
-    background-color: crimson;
-    flex-grow: 1;
-    height: 350px;  
+    
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 
