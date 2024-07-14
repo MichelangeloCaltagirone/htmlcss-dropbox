@@ -116,6 +116,10 @@ nav {
     font-size: 18px;
     margin: 0 10px;
 }
+.left-upper-nav, .right-upper-nav {
+    height: 80px;
+    align-items: center;
+}
 
 nav button {
     margin-left: 10px;
