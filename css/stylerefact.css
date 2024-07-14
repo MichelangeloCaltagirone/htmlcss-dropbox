@@ -51,12 +51,9 @@ button {
     border: none;
     font-size: 16px;
 }
-
-#alt-btn-partner {
+button.alt {
     background-color: transparent;
     color: black;
-    border: var(--border-style);
-    margin-top: 25px;
     padding: 5px 10px;
 }
 header {
@@ -73,7 +70,6 @@ header {
 .link-nude {
     text-decoration: none;
     font-size: small;
-    color: black;
 }
 
 /*  Utility */
@@ -125,6 +121,16 @@ nav button {
     margin-left: 10px;
 }
 
+nav a {
+    color: black;
+}
+
+.left-upper-nav a {
+    margin-right: 10px;
+}
+.right-upper-nav a {
+    margin-left: 10px;
+}
 
 .left-upper-nav > span {
     margin-right: 10px;
@@ -199,6 +205,7 @@ nav button {
 .subscriptions .col {
     flex-basis: calc(100% / 3 - 20px / 3);
     border: var(--border-style);
+    flex-grow: 1;
 }
 
 .inner-col {
@@ -206,7 +213,6 @@ nav button {
 }
 
 .final.col {
-    flex-grow: 1;
     padding-bottom: 15px;
 }
 
@@ -254,9 +260,9 @@ li > i::before {
     justify-content: center;
     align-items: center;
 }
-.col a:last-of-type {
+.subscriptions .col a:last-of-type {
     margin-left: 5px;
-    color: lightskyblue 
+    color: rgb(27, 79, 251);
 }
 
 .col-ul-title {
@@ -294,7 +300,9 @@ li > i::before {
 }
 
 /* Style of Find Partner section */
-
+.find-partner.flex p {
+    margin-bottom: 25px;
+}
 
 .find-partner.flex img {
     flex-basis: 60%;
@@ -302,6 +310,9 @@ li > i::before {
 
 .find-partner.flex div {
     padding: 10px 20px;
+}
+.find-partner.flex button {
+    border: var(--border-style);
 }
 
 /* Style for Flex Features' Section */
@@ -415,6 +426,9 @@ section.free-try-link {
     flex-basis: 30%;
     text-align: right;
 }
+.free-try-link button {
+    background-color: white;
+}
 
 /* Style for th F.A.Q section */
 .f-a-q div {
@@ -426,13 +440,13 @@ section.free-try-link {
     font-weight: bold;
     display: inline-block;
 }
-.f-a-q a {
+.f-a-q i {
     position: absolute;
     right: 15px;
 }
 
-/* Footer flex style */
 
+/* Footer flex style */
 
 footer {
     margin-top: 100px;
@@ -453,7 +467,9 @@ footer li {
     margin: 15px 0;
     font-size: small;
 }
-
+footer li > a {
+    color: white;
+}
 footer .custom-hr {
     border-color: white;
 }
