@@ -1,0 +1,458 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+
+:root {
+    --border-style: 1px solid black;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+#jumbo-lower-header {
+    width: 660px;
+}
+
+#partner-pic {
+    width: 450px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(6, 85, 181);
+    border: none;
+    font-size: 16px;
+}
+
+#alt-btn-partner {
+    background-color: transparent;
+    color: black;
+    border: var(--border-style);
+    margin-top: 25px;
+    padding: 5px 10px;
+}
+header {
+    background-color: rgb(133, 216, 244);
+}
+
+
+#logo {
+    width: 7rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.link-nude {
+    text-decoration: none;
+    font-size: small;
+}
+
+/*  Utility */
+
+.flex {
+    display: flex;
+}
+
+.bg-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sm-container {
+    width: 800px;
+    margin: 100px auto 0 auto;
+}
+
+.upper-header {
+    border-bottom: 1px solid black; /* da togliere */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.lower-header {
+    margin-top: 80px;
+    padding: 30px 0;
+    height: 60vh;
+    position: relative;
+}
+
+
+
+/* Style the Upper-header Nav */
+
+nav {
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+nav button {
+    margin-left: 10px;
+}
+
+
+.left-upper-nav > span {
+    margin-right: 10px;
+}
+.right-upper-nav span {
+    margin-left: 10px;
+}
+
+ /* Style Lower header  */
+
+.lower-header .flex > div {
+    flex-basis: 35%;
+}
+
+.lower-header a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+    color: black;
+}
+
+
+.lower-header button {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+/* Style of the Main */
+
+/* Subscriptions Section */
+
+/* Utility for this section till next comment */
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.circle.colored {
+    border-color: rgb(4, 4, 192);
+    border-width: 4px;
+}
+
+
+.subscriptions  > :nth-child(4) {
+    margin-left: 20px;
+}
+
+.custom-hr {
+    width: 40px;    
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+}
+
+/* End of Utility */
+
+/* Styling the flex container of this section */
+
+.row {
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscriptions .col {
+    flex-basis: calc(100% / 3 - 20px / 3);
+    border: var(--border-style);
+    padding: 0 10px;
+}
+
+.final.col {
+    flex-grow: 1;
+    padding-bottom: 15px;
+}
+
+/* Internal style of the row's sons */
+
+.row h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.subscription-type {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: var(--border-style)
+    
+}
+
+.sub-cost {
+    font-weight: bold;
+    font-size: small;
+}
+
+.sub-duration {
+    color: lightslategray;
+    font-size: small;
+    margin-bottom: 30px;
+    display: block;
+}
+
+li > i::before {
+    margin-right: 7px;
+}
+
+.subscriptions .col li {
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.subscriptions .col button {
+    margin: 20px 0;
+} 
+
+.col a:last-of-type {
+    margin-left: 5px;  
+}
+
+.col-ul-title {
+    font-weight: bold;
+}
+
+.sub-point-of-interest li {
+    margin: 10px 0;
+}
+
+.sub-point-of-interest li::before {
+    content: '\2713';
+    color: blue;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* Last column with flex-grow 1 style */
+
+.final.col {
+    position: relative;
+}
+.final.col h3 {
+    text-align: left;
+}
+
+.final.col button {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+}
+
+.final.col p {    
+    margin-top: 30px;
+}
+
+/* Style of Find Partner section */
+
+
+.find-partner.flex img {
+    flex-basis: 60%;
+}
+
+.find-partner.flex div {
+    padding: 10px 20px;
+}
+
+/* Style for Flex Features' Section */
+
+
+.features .flex {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features .card {
+    flex-basis: calc(100% / 3 - 60px / 3); 
+    
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+/* This section shows the style for the shares of DropBox */
+.share-adoption {
+    padding-top: 30px;
+}
+.share-adoption > a {
+    color: rgb(27, 79, 251);
+    font-size: small;
+}
+
+
+/* Flex section dedicated to display Clients */
+
+.Corp-client.flex > * {
+    flex-basis: calc(100% / 3);
+}
+
+.Corp-client > .side.flex {
+    flex-wrap: wrap;
+}
+
+.side.flex > * { 
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+}
+
+/* style of the big box in the center */
+.Corp-client {
+    margin-top: 100px;
+}
+.Corp-client.flex .center {
+    padding: 40px
+}
+
+.center img {
+    width: 50%;
+}
+
+.center p {
+    margin-bottom: 30px;
+}
+
+ /* Background colors of the sons of Flex. left/right */
+#designit {
+    background-color: lightgreen;
+}
+#arizona {
+    background-color: maroon
+}
+#florida {
+    background-color: skyblue;
+    align-items:stretch 0;
+}
+#topps {
+    background-color: red;
+}
+#world {
+    background-color: darkred;
+}
+#hearst {
+    background-color: azure;
+}
+#lonely {
+    background-color: blue;
+}
+#channel {
+    background-color: gold;
+}
+
+ /* Free-try Link Section */
+
+section.free-try-link {
+    background-color: rgb(133, 216, 244);
+    padding: 55px 0;
+}
+.free-try-link .flex {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+.free-try-link .flex > h2 {
+    flex-basis: 40%;
+}
+.free-try-link .flex > a { /* link style to generalize */
+    flex-basis: 30%;
+    text-align: right;
+}
+
+/* Style for th F.A.Q section */
+.f-a-q div {
+    position: relative;
+    margin: 25px 0;
+}
+.f-a-q p {
+    font-size: small;
+    font-weight: bold;
+    display: inline-block;
+}
+.f-a-q a {
+    position: absolute;
+    right: 15px;
+}
+
+/* Footer flex style */
+
+
+footer {
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+footer .flex {
+     padding: 30px 0;
+}
+footer .col {
+    flex-basis: 20%;
+}
+footer h3 {
+    margin-bottom: 30px;
+}
+footer li {
+    margin: 15px 0;
+    font-size: small;
+}
+
+footer .custom-hr {
+    border-color: white;
+}
+
+footer .fa-earth-americas::before {
+    margin-right: 7px;
+}
+
+footer .fa-caret-up::before {
+    margin-left: 5px;
+}
