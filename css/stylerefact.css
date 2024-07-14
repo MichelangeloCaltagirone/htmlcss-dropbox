@@ -73,6 +73,7 @@ header {
 .link-nude {
     text-decoration: none;
     font-size: small;
+    color: black;
 }
 
 /*  Utility */
@@ -198,6 +199,9 @@ nav button {
 .subscriptions .col {
     flex-basis: calc(100% / 3 - 20px / 3);
     border: var(--border-style);
+}
+
+.inner-col {
     padding: 0 10px;
 }
 
@@ -245,9 +249,14 @@ li > i::before {
 .subscriptions .col button {
     margin: 20px 0;
 } 
-
+.col div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .col a:last-of-type {
-    margin-left: 5px;  
+    margin-left: 5px;
+    color: lightskyblue 
 }
 
 .col-ul-title {
