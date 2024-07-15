@@ -4,45 +4,44 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Generics */
+/* Custom Proprierties */
 
 :root {
     --border-style: 1px solid black;
 }
+:root{
+    --md-padding:
+}
+
+
+/* Generics */
+
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
 #jumbo-lower-header {
     width: 660px;
 }
-
 #partner-pic {
     width: 450px;
 }
-
 h1 {
     text-align: left;
     font-size: 36px;
     margin-bottom: 40px;
     font-weight: 900;
 }
-
 h2 {
     font-size: 28px;
     margin: 30px 0;
 }
-
 p {
     font-size: 16px;
 }
-
 ul {
     list-style-type: none;
 }
-
 button {
     padding: 5px 10px;
     color: white;
@@ -55,17 +54,26 @@ button.alt {
     color: black;
     padding: 5px 10px;
 }
+button.alt a {
+    background-color: transparent;
+    color: black;
+    padding: 5px 10px;
+}
 button:hover {
     scale: 1.1;
 }
 header {
     background-color: rgb(133, 216, 244);
 }
-
-
 #logo {
     width: 7rem;
-    display: inline-block;
+    display: block;
+}
+a {
+    color: rgb(27, 79, 251);;
+}
+button a {
+    color: white;
 }
 .link-nude {
     text-decoration: none;
@@ -115,7 +123,6 @@ nav {
     gap: 20px;
     align-items: center;
 }
-
 .upper-nav > div {
     height: 80px;
     line-height: 80px;
@@ -127,6 +134,9 @@ nav {
 nav a {
     color: black;
 }
+nav button a {
+    color: white; /* this is not so great */
+}
 
 
 
@@ -135,7 +145,6 @@ nav a {
 .lower-header .flex > div {
     flex-basis: 35%;
 }
-
 .lower-header a {
     position: absolute;
     bottom: 0;
@@ -144,8 +153,6 @@ nav a {
     padding-bottom: 5px;
     color: black;
 }
-
-
 .lower-header button {
     margin: 20px 0;
     padding: 10px;
@@ -166,17 +173,13 @@ nav a {
     display: inline-block;
     margin-right: 5px;
 }
-
 .circle.colored {
     border-color: rgb(4, 4, 192);
     border-width: 4px;
 }
-
-
 .subscriptions  > :nth-child(4) {
     margin-left: 20px;
 }
-
 .custom-hr {
     width: 40px;
     border-bottom: 1px solid black;
@@ -192,20 +195,18 @@ nav a {
     gap: 10px;
     flex-wrap: wrap;
 }
-
 .subscriptions .col {
     flex-basis: calc(100% / 3 - 20px / 3);
     border: var(--border-style);
     flex-grow: 1;
 }
-
 .inner-col {
     padding: 0 10px;
 }
-
 .final.col {
     padding-bottom: 15px;
 }
+
 
 /* Internal style of the row's sons */
 
@@ -214,35 +215,32 @@ nav a {
     text-align: center;
     margin: 15px 0;
 }
-
+.subscription-type i:first-child::before {
+    margin-right: 5px;
+}
 .subscription-type {
     text-align: center;
     padding: 5px 0;
     border-bottom: var(--border-style)
 
 }
-
 .sub-cost {
     font-weight: bold;
     font-size: small;
 }
-
 .sub-duration {
     color: lightslategray;
     font-size: small;
     margin-bottom: 30px;
     display: block;
 }
-
 li > i::before {
     margin-right: 7px;
 }
-
 .subscriptions .col li {
     font-size: small;
     margin-bottom: 15px;
 }
-
 .subscriptions .col button {
     margin: 20px 0;
 }
@@ -251,25 +249,22 @@ li > i::before {
     justify-content: center;
     align-items: center;
 }
-.subscriptions .col a:last-of-type {
-    margin-left: 5px;
-    color: rgb(27, 79, 251);
-}
-
 .col-ul-title {
     font-weight: bold;
 }
-
+.col :nth-child(6) {
+    margin-left: 5px;
+}
 .sub-point-of-interest li {
     margin: 10px 0;
 }
-
 .sub-point-of-interest li::before {
     content: '\2713';
     color: blue;
     font-size: 15px;
     margin-right: 5px;
 }
+
 
 /* Last column with flex-grow 1 style */
 
@@ -279,26 +274,23 @@ li > i::before {
 .final.col h3 {
     text-align: left;
 }
-
 .final.col button {
     position: absolute;
     right: 5px;
     top: 30px;
 }
-
 .final.col p {
     margin-top: 30px;
 }
+
 
 /* Style of Find Partner section */
 .find-partner.flex p {
     margin-bottom: 25px;
 }
-
 .find-partner.flex img {
     flex-basis: 60%;
 }
-
 .find-partner.flex div {
     padding: 10px 20px;
 }
@@ -306,31 +298,29 @@ li > i::before {
     border: var(--border-style);
 }
 
-/* Style for Flex Features' Section */
 
+
+/* Style for Flex Features' Section */
 
 .features .flex {
     gap: 30px;
     flex-wrap: wrap;
 }
-
 .features .card {
     flex-basis: calc(100% / 3 - 60px / 3);
 
 }
-
 .card img {
     width: 100%;
 }
-
 .card h3 {
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 
-
 /* This section shows the style for the shares of DropBox */
+
 .share-adoption {
     padding-top: 30px;
 }
@@ -346,11 +336,9 @@ li > i::before {
     flex-basis: calc(100vw / 3);
     height: calc(100vw / 3);
 }
-
 .Corp-client > .side.flex {
     flex-wrap: wrap;
 }
-
 .side.flex > * {
     width: 50%;
     height: 50%;
@@ -359,31 +347,31 @@ li > i::before {
     justify-content: center;
     border: 15px solid transparent;
 }
-
 .side.flex div:hover {
     border-color: rgba(255, 255, 255, 0.5);
 }
-
 .side.flex img {
     width: 50%;
     filter: invert(1);
 }
 
+
+
 /* style of the big box in the center */
+
 .Corp-client {
     margin-top: 100px;
 }
 .Corp-client.flex .center {
     padding: 40px
 }
-
 .center img {
     width: 50%;
 }
-
 .center p {
     margin-bottom: 30px;
 }
+
 
  /* Background colors of the sons of Flex. left/right */
 #designit {
@@ -411,6 +399,7 @@ li > i::before {
 #channel {
     background-color: gold;
 }
+
 
  /* Free-try Link Section */
 
@@ -448,11 +437,9 @@ section.free-try-link {
 .f-a-q i {
     margin-right: 15px;
 }
-
 .f-a-q .answer {
     display: none;
 }
-
 .question:hover .answer {
     display: block;
 }
@@ -487,11 +474,9 @@ footer li > a {
 footer .custom-hr {
     border-color: white;
 }
-
 footer .fa-earth-americas::before {
     margin-right: 7px;
 }
-
 footer .fa-caret-up::before {
     margin-left: 5px;
 }
