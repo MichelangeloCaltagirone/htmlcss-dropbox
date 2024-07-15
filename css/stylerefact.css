@@ -56,6 +56,9 @@ button.alt {
     color: black;
     padding: 5px 10px;
 }
+button:hover {
+    scale: 1.1;
+}
 header {
     background-color: rgb(133, 216, 244);
 }
@@ -64,7 +67,6 @@ header {
 #logo {
     width: 7rem;
     display: inline-block;
-    margin-right: 10px;
 }
 
 .link-nude {
@@ -116,28 +118,20 @@ nav {
     font-size: 18px;
     margin: 0 10px;
 }
-.left-upper-nav, .right-upper-nav {
-    align-items: center;
-}
-.left-upper-nav > * {
+
+.upper-nav > * {
     height: 80px;
-    line-height: 80px;    
-    justify-content: center;
+    line-height: 80px;
     position: relative;
+    border-bottom: 5px solid transparent;
+    text-align: center;
+    padding: 0 10px;
 }
-.hoover-border {
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    box-shadow:  0px -2px 5px rgba(235, 11, 11, 0.5);
-    display: none;
+.upper-nav.flex div:hover{
+    border-color: rgba(121, 110, 110, 0.5);
 }
 
-a:hover .hoover-border {
-    display: inline-block;
-}
+
 
 nav button {
     margin-left: 10px;
@@ -147,19 +141,13 @@ nav a {
     color: black;
 }
 
-.left-upper-nav a {
+/* .left-upper-nav a {
     margin-right: 10px;
 }
 .right-upper-nav a {
     margin-left: 10px;
-}
+} */
 
-.left-upper-nav > span {
-    margin-right: 10px;
-}
-.right-upper-nav span {
-    margin-left: 10px;
-}
 
  /* Style Lower header  */
 
@@ -209,7 +197,7 @@ nav a {
 }
 
 .custom-hr {
-    width: 40px;    
+    width: 40px;
     border-bottom: 1px solid black;
     margin: 20px 0;
 }
@@ -250,7 +238,7 @@ nav a {
     text-align: center;
     padding: 5px 0;
     border-bottom: var(--border-style)
-    
+
 }
 
 .sub-cost {
@@ -276,7 +264,7 @@ li > i::before {
 
 .subscriptions .col button {
     margin: 20px 0;
-} 
+}
 .col div:first-of-type {
     display: flex;
     justify-content: center;
@@ -317,7 +305,7 @@ li > i::before {
     top: 30px;
 }
 
-.final.col p {    
+.final.col p {
     margin-top: 30px;
 }
 
@@ -346,8 +334,8 @@ li > i::before {
 }
 
 .features .card {
-    flex-basis: calc(100% / 3 - 60px / 3); 
-    
+    flex-basis: calc(100% / 3 - 60px / 3);
+
 }
 
 .card img {
@@ -382,13 +370,13 @@ li > i::before {
     flex-wrap: wrap;
 }
 
-.side.flex > * { 
+.side.flex > * {
     width: 50%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 15px solid transparent; 
+    border: 15px solid transparent;
 }
 
 .side.flex div:hover {
