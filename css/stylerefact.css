@@ -124,12 +124,14 @@ nav {
     align-items: center;
 }
 .upper-nav > div {
-    height: 80px;
-    line-height: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;    
 }
 .upper-nav div:hover{
-    border-color: rgba(121, 110, 110, 0.5);
+    border-bottom-color: rgba(121, 110, 110, 0.5);
 }
 nav a {
     color: black;
